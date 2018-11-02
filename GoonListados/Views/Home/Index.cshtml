@@ -12,7 +12,7 @@
                 </div>
                 <div class="mr-5">26 New buses!</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="/Buses/">
+            <a class="card-footer text-white clearfix small z-1" href="#" data-toggle="modal" data-target="#infoModal">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="mr-5">11 New Routers!</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="/Routers/">
+            <a class="card-footer text-white clearfix small z-1" href="#" data-toggle="modal" data-target="#infoModal">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                     <i class="fas fa-angle-right"></i>
@@ -44,12 +44,35 @@
                 </div>
                 <div class="mr-5">123 New Sims!</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="/Sims/">
+            <a class="card-footer text-white clearfix small z-1" href="#" data-toggle="modal" data-target="#infoModal">
                 <span class="float-left">View Details</span>
                 <span class="float-right">
                     <i class="fas fa-angle-right"></i>
                 </span>
             </a>
         </div>
-    </div>   
+    </div>
+</div>
+
+
+<!-- Modal-->
+<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal @ViewBag.Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices dictum diam, eget rhoncus odio pharetra at. Donec fermentum arcu turpis. Mauris accumsan interdum urna, vel ultrices orci hendrerit vitae. Donec sodales semper velit et accumsan. Praesent non dui purus. Praesent condimentum fringilla purus, vel cursus ante fringilla hendrerit. Mauris hendrerit metus id nisl blandit, semper imperdiet mi ultrices. Fusce accumsan at sem aliquam mollis. Phasellus metus ligula, dictum a vulputate et, molestie accumsan neque. Donec blandit lectus sit amet est hendrerit luctus. Suspendisse id neque luctus, tincidunt dui sit amet, venenatis nulla. Mauris non molestie tellus. Donec tristique justo lacus, eget suscipit ex gravida quis. Curabitur interdum lobortis nisl, et posuere velit laoreet et.</p>
+                <p>Praesent laoreet purus vitae euismod tempus. Donec ut ligula commodo, ullamcorper diam nec, elementum justo. Praesent at lobortis tortor. Praesent iaculis consectetur aliquet. Quisque dignissim ut ipsum sit amet vestibulum. Nam aliquam tincidunt bibendum. Vivamus nec blandit ante.</p>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
 </div>
