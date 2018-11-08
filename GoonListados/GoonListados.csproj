@@ -169,6 +169,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -3167,10 +3169,12 @@
     <Content Include="Views\Buses\Index.cshtml" />
     <Content Include="Views\Routers\Index.cshtml" />
     <Content Include="Views\Sims\Index.cshtml" />
+    <Content Include="Views\Buses\Ver.cshtml" />
+    <Content Include="Views\Routers\Ver.cshtml" />
+    <Content Include="Views\Sims\Ver.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

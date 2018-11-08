@@ -1,7 +1,6 @@
-﻿using System;
+﻿using GoonListados.Helpers;
+using GoonListados.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace GoonListados.Controllers
@@ -11,6 +10,16 @@ namespace GoonListados.Controllers
         // GET: Buses
         public ActionResult Index()
         {
+            List<DataItem> _list = DataHelper.p_GetData("Buses");
+
+            return View(_list);
+        }
+
+        [HttpGet]
+        public ActionResult Ver(int id)
+        {
+            ViewBag.Title = "Buses | Ver >>> " + id.ToString();
+
             return View();
         }
     }

@@ -1,0 +1,164 @@
+﻿
+<h2>Ver</h2>
+
+<div class="row" style="margin-bottom: 9px;">
+
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+
+</div>
+
+<div class="row" style="margin-bottom: 9px;">
+
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+
+</div>
+
+<div class="row" style="margin-bottom: 9px;">
+
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+
+</div>
+
+<div class="row" style="margin-bottom: 9px;">
+
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+
+</div>
+
+<div class="row" style="margin-bottom: 9px;">
+
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+    <div class="col"><input type="text" class="form-control" placeholder="Datos"></div>
+
+</div>
+
+
+<div class="row" style="margin-bottom: 9px;">
+
+    <div class="col">
+        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#infoModalNotas"><span class="badge badge-light" style="margin-left:5px;"> 4 </span><span class="float-left"> Notas </span></a>
+        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#infoModalUbicaciones"><span class="badge badge-light" style="margin-left:5px;"> 8 </span><span class="float-left">Ubicaciones</span></a>
+    </div>
+
+    <div class="col">
+        @Html.ActionLink("Volver", "Index", "Buses", new { @class = "btn btn-primary float-right" })
+    </div>
+
+</div>
+
+
+
+
+<!-- Modal - Notas-->
+<div class="modal fade" id="infoModalNotas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Notas: @ViewBag.Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Col 1</th>
+                            <th scope="col">Col 2</th>
+                            <th scope="col">Col 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Datos 1</td>
+                            <td>Datos 2</td>
+                            <td>Datos 3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Datos 1</td>
+                            <td>Datos 2</td>
+                            <td>Datos 3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Datos 1</td>
+                            <td>Datos 2</td>
+                            <td>Datos 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal - Ubicaciones-->
+<div class="modal fade" id="infoModalUbicaciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ubicaciones: @ViewBag.Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Col 1</th>
+                            <th scope="col">Col 2</th>
+                            <th scope="col">Col 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Datos 1</td>
+                            <td>Datos 2</td>
+                            <td>Datos 3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Datos 1</td>
+                            <td>Datos 2</td>
+                            <td>Datos 3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Datos 1</td>
+                            <td>Datos 2</td>
+                            <td>Datos 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
