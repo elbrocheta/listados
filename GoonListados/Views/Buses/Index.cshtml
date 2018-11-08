@@ -6,7 +6,12 @@
     ViewBag.Title = "Buses";
 }
 
+
+@Html.Partial("~/Views/Shared/_Filter.cshtml")
+
 <div class="card mb-3">
+
+
     <div class="card-header">
         <i class="fas fa-table"></i>
         Ejemplo tabla @ViewBag.Title
@@ -34,7 +39,7 @@
                         <th>Salary</th>
                     </tr>
                 </tfoot>
-                
+
                 <tbody>
 
                     @{ var index = 1; }
@@ -48,7 +53,8 @@
                             <td>@_item.datos4</td>
                             <td>@_item.datos5</td>
                             <td>@_item.datos6</td>
-                            <td>@Html.ActionLink("Ver","Ver","Buses",new {id = index},new { @class = "btn btn-primary"  } )
+                            <td>
+                                @Html.ActionLink("Ver", "Ver", "Buses", new { id = index }, new { @class = "btn btn-primary" })
                             </td>
                         </tr>
                     }

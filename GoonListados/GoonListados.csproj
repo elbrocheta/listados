@@ -3172,6 +3172,7 @@
     <Content Include="Views\Buses\Ver.cshtml" />
     <Content Include="Views\Routers\Ver.cshtml" />
     <Content Include="Views\Sims\Ver.cshtml" />
+    <Content Include="Views\Shared\_Filter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

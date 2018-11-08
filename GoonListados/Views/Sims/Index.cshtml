@@ -6,6 +6,10 @@
     ViewBag.Title = "Sims";
 }
 
+
+@Html.Partial("~/Views/Shared/_Filter.cshtml")
+
+
 <div class="card mb-3">
     <div class="card-header">
         <i class="fas fa-table"></i>
@@ -50,9 +54,9 @@
                             <td>@_item.datos6</td>
                             <td>
                                 @Html.ActionLink("Ver", "Ver", "Sims", new { id = index }, new { @class = "btn btn-primary" })
-                        </td>
-                    </tr>
-                }
+                            </td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
