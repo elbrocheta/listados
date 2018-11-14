@@ -26,22 +26,12 @@
                         <th>Age</th>
                         <th>Start date</th>
                         <th>Salary</th>
+                        <th style="display: none"></th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                    </tr>
-                </tfoot>
+                
 
-                <tbody>
-
-                    @{ var index = 1; }
+                <tbody>                   
 
                     @foreach (DataItem _item in Model)
                     {
@@ -53,7 +43,7 @@
                             <td>@_item.datos5</td>
                             <td>@_item.datos6</td>
                             <td>
-                                @Html.ActionLink("Ver", "Ver", "Sims", new { id = index }, new { @class = "btn btn-primary" })
+                                @Html.ActionLink("Ver", "Ver", "Sims", new { id = _item.datos1 }, new { @class = "btn btn-primary" })
                             </td>
                         </tr>
                     }
@@ -63,3 +53,4 @@
     </div>
     <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
 </div>
+
